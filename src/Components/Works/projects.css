@@ -34,29 +34,25 @@
     width: 45%;
     height: 30rem;
     margin: 1rem;
-
-    /* padding: 1rem;  */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #fff; /* Add a background color */
+    align-items: center; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     border-radius: 2%;
+    background-color: #fff;
     transition: transform 0.2s ease-in-out;
 }
 
 .projects-imgs>span:hover{
     transform: scale(1.3);
     transition: transform 0.3s ease-in-out;
-
     
+    .git-btn{
+        animation: fadeIn 2s 0.5s backwards;
+        opacity: 1;
+    }
 }
-.projects-imgs>span:hover::after{
-    transform: scale(1);
-    transition: transform 0.3s ease-out;
 
-    
-}
 
 .works-img {
     width: 100%;
@@ -72,10 +68,44 @@
 
 .projects-imgs>span p {
     font-size: 1rem; /* Adjust the paragraph font size */
-    
+    height: 20rem;
     margin: 0 1rem;
 }
 
+/* .git-btn {
+margin-top: 1rem; 
+} */
+
+
+
 .git-btn {
-margin-top: 1rem; /* Add spacing between content and the GitHub button */
+    color: #2D5E14;
+    width: 10rem;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #2D5E14;
+    white-space: nowrap;
+    border-radius: 0.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    background-color: #fff;
+
+    &:hover {
+        background-color: #2D5E14;
+        color: #fff;
+
+        .git-icon{
+            color: #fff;
+        }
+    }
+}
+
+.git-icon {
+    font-size: 1.5rem;
+    margin: -0.2rem 0.5rem -0.2rem -0.55rem;
 }

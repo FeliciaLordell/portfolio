@@ -16,28 +16,28 @@ const Projects = () => {
           <span>
             <img src={Mytrip} alt='Mytrip' className='works-img'/>
             <h4>MyTrip</h4>
-            <p>MyTrip is a group project that we worked on at Brights Learning. We created an application where you can plan your travels and save it in your personal itinerary. LINQ had a very central roloe in this application to join the data from the different tables. </p>
-            <div className='git-btn'><a
+            <p>MyTrip is a collaborative project we undertook at Brights Learning. Our team developed an innovative application designed for travel planning and personal itinerary management.</p>
+            <a className='git-btn'
               target="_blank"
               rel="noreferrer"
               href="https://github.com/FeliciaLordell/MyTripMVC"
             >
-              <FontAwesomeIcon className='nav-menu-icons' icon={faGithub} color="#2D5E14" />
+              <FontAwesomeIcon className='git-icon' icon={faGithub} color="#2D5E14" />
+              VIEW CODE
             </a>
-            </div>
          </span>
           <span>
             <img src={Netflix} alt='netflix replica' className='works-img'/>
             <h4>Portfolio</h4>
-            <p>To build this portfolio I'v used React, JS, SASS, CSS and HTML. </p>
-            <div className='git-btn'><a
+            <p>I've created this portfolio to showcase my projects, and I've built it using a combination of technologies, including React, JavaScript, SASS, CSS, and HTML.</p>
+            <a className='git-btn'
               target="_blank"
               rel="noreferrer"
               href="https://github.com/FeliciaLordell/portfolio"
             >
-              <FontAwesomeIcon className='nav-menu-icons' icon={faGithub} color="#2D5E14" />
-            </a>VIEW CODE
-            </div>
+                <FontAwesomeIcon className='git-icon' icon={faGithub} color="#2D5E14" />
+                VIEW CODE
+            </a>
           </span>
           <span>
             <img src={BookGen} alt='bookgen' className='works-img'/>

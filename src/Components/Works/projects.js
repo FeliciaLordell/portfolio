@@ -30,19 +30,20 @@ const Projects = () => {
             <img src={Netflix} alt='netflix replica' className='works-img'/>
             <h4>Portfolio</h4>
             <p>To build this portfolio I'v used React, JS, SASS, CSS and HTML. </p>
+            <div className='git-btn'><a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/FeliciaLordell/portfolio"
+            >
+              <FontAwesomeIcon className='nav-menu-icons' icon={faGithub} color="#2D5E14" />
+            </a>VIEW CODE
+            </div>
           </span>
           <span>
             <img src={BookGen} alt='bookgen' className='works-img'/>
             <h4>BookGen</h4>
             <p>Coming soon... <br />BookGen is an application where you can generate book suggestions, search for books. I user Google Books API to gather all data. </p>
-            <div className='git-btn'><a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/FeliciaLordell/BookGen"
-            >
-              <FontAwesomeIcon className='nav-menu-icons' icon={faGithub} color="#2D5E14" />
-            </a>
-            </div>
+         
           </span>
         </div>
       {/* </div> */}

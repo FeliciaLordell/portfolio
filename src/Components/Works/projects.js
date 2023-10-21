@@ -4,10 +4,26 @@ import Mytrip from '../../assets/images/MyTrip.jpg'
 import BookGen from '../../assets/images/bookgen.jpg'
 import Netflix from '../../assets/images/portfolio-img.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import CSharp from '../../assets/images/csharp-logo.png'
+import 'intersection-observer';
 
 
 const Projects = () => {
+  const observer2 = new IntersectionObserver((entries, observer2) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = "running";
+      } else {
+        entry.target.style.animationPlayState = "paused";
+      }
+    });
+  });
+
+    document.querySelectorAll(".face").forEach((element) => {
+    observer2.observe(element);
+  });
+
   return (
     <section id="projects">
       {/* <div className='text-zone'> */}
@@ -45,6 +61,34 @@ const Projects = () => {
             <p>Coming soon... <br />BookGen is an application where you can generate book suggestions, search for books. I user Google Books API to gather all data. </p>
          
           </span>
+        </div>
+        <h2 className='projects-title techniqes-title'>Techniques I've used</h2>
+        <div className='stage-cube-cont'>
+                <div className='face'>
+                    <img className='icons-img' src={CSharp} alt='C sharp icon'/>
+                    <p style={{color: "#803788"}}>C#</p>
+                </div>
+                <div className='face'>
+                    <FontAwesomeIcon className='icons' icon={faJsSquare} color="#EFD81D" />                        
+                    <p style={{color: "#EFD81D"}} >JavaScript</p>
+                </div>
+                <div className='face'>
+                    <FontAwesomeIcon className='icons' icon={faReact} color="#5ED4F4" />
+                    <p style={{color: "#5ED4F4"}}>React</p>
+                </div>
+                <div className='face'>
+                    <FontAwesomeIcon className='icons' icon={faHtml5} color="#F06529" />                        
+                    <p style={{color: "#F06529" }}>HTML</p>
+                </div>
+                <div className='face'>
+                    <FontAwesomeIcon className='icons' icon={faCss3} color="#28A4D9" />                        
+                    <p style={{color: "#28A4D9"}}>CSS</p>
+                </div>
+                <div className='face'>
+                    <FontAwesomeIcon className='icons' icon={faGitAlt} color="#EC4D28" />
+                    <p style={{color: "#EC4D28"}}>Git</p>
+                </div>
+                
         </div>
       {/* </div> */}
     </section>

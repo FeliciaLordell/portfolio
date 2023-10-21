@@ -109,3 +109,45 @@ margin-top: 1rem;
     font-size: 1.5rem;
     margin: -0.2rem 0.5rem -0.2rem -0.55rem;
 }
+
+.techniqes-title{
+    margin-top: 2rem;
+}
+
+
+.stage-cube-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between elements as needed */
+}
+
+.icons {
+    width: 8vw; /* Set a fixed width for all icons */
+    height: 8vw; /* Set a fixed height for all icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icons-img{
+    width: vw; /* Set a fixed width for all icons */
+    height: 8vw; /* Set a fixed height for all icons */
+    /* animation: spin 6s linear infinite; */
+}
+
+.face {
+    text-align: center;
+    animation: spin 18s linear forwards;
+    animation-play-state: paused;
+}
+  
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(1080deg);
+    }
+} 

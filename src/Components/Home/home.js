@@ -40,7 +40,7 @@ const Home = () => {
             
             <p className='home-para'>I'm an ambitious and highly motivated individual with a profound passion 
                     for technology and a relentless drive for problem-solving.</p>
-            <Link to="#contact" className='flat-button'>CONTACT ME</Link>
+            <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-90} duration={500} className='flat-button'>CONTACT ME</Link>
           </div>
         </div>
         <img src={bg} alt='Profile' className='bg' />

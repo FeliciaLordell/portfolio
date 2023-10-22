@@ -10,10 +10,10 @@ const Navbar = () => {
     <nav className='navbar'>
         <img src={logo} alt='logo' className='logo'/>
         <div className='nav-menu'>
-            <Link className='nav-menu-list-item'>Home</Link>
-            <Link className='nav-menu-list-item'>About</Link>
-            <Link className='nav-menu-list-item'>Portfolio</Link>
-            <Link className='nav-menu-list-item'>Contact</Link>
+            <Link activeClass='active' to='home' spy={true} smooth={true} offset={-90} duration={500} className='nav-menu-list-item'>Home</Link>
+            <Link activeClass='active' to='about' spy={true} smooth={true} offset={-90} duration={500} className='nav-menu-list-item'>About</Link>
+            <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-90} duration={500} className='nav-menu-list-item'>Portfolio</Link>
+            <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-90} duration={500} className='nav-menu-list-item'>Contact</Link>
         </div>
         <ul>
             <li className='nav-menu-links'>

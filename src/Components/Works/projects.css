@@ -151,3 +151,24 @@ margin-top: 1rem;
         transform: rotateX(0deg) rotateY(1080deg);
     }
 } 
+
+@media screen and (max-width:820px) {
+    .projects-imgs>span {
+        width: 80%;
+        height: 35rem;
+    }
+    .git-btn{
+        opacity: 1;
+    }
+    .projects-imgs>span:hover{
+        transform: none;
+        transition: none;
+        
+        .git-btn{
+            animation: none;
+        }
+    }
+
+}
+
+

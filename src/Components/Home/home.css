@@ -1,7 +1,7 @@
 #home {
     height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 75rem;
+    max-width: 65rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -72,7 +72,7 @@ margin-left: 20px;
 
 @media screen and (max-width:840px) {
     .bg {
-        right: -5vw;
+        right: -10vw;
     }
 
     .home-content {

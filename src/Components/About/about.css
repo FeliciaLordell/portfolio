@@ -3,7 +3,6 @@
     margin: 2rem 0;
     background: rgba(45, 94, 20, 0.1);
 
-
 }
 .text-zone {
     display: flex;
@@ -46,6 +45,12 @@
         animation-delay: 1.3s;
     }
     animation-play-state: paused;
+}
+
+@media screen and (max-width:769px){
+    .about-description{
+        padding: 0 2rem;
+    }
 }
 
 

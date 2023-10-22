@@ -43,7 +43,7 @@ const Projects = () => {
       <h2>
         <AnimatedLetters
           letterClass={`${letterClass} about-title`}
-          strArray={['A', 'p', 'p', 's', ' ', 'I´', 'v', 'e', ' ', 'b', 'u', 'i', 'l', 't']}
+          strArray={['A', 'p', 'p', 's', ' ', "I'", 'v', 'e', ' ', 'b', 'u', 'i', 'l', 't']}
           idx={15}
         />
       </h2>
@@ -84,7 +84,7 @@ const Projects = () => {
       <h2 className='projects-title techniqes-title'>
         <AnimatedLetters
           letterClass={`${letterClass} about-title`}
-          strArray={['T', 'e', 'c', 'h', 'n', 'i', 'q', 'u', 'e', 's', ' ', 'I´', 'v', 'e', ' ', 'u', 's', 'e', 'd']}
+          strArray={['T', 'e', 'c', 'h', 'n', 'i', 'q', 'u', 'e', 's', ' ', "I'", 'v', 'e', ' ', 'u', 's', 'e', 'd']}
           idx={15}
         />
       </h2>

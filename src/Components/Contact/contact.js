@@ -1,6 +1,7 @@
 import './contact.css';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
+import AnimatedLetters from '../AnimatedLetters';
 
 
 const Contact = () => {
@@ -26,14 +27,32 @@ const Contact = () => {
             )
     }
 
+    const [letterClass, setLetterClass] = useState('text-animate');
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 3000);
+
+        return () => {
+            clearTimeout(timer); 
+        };
+    }, []);
+
     return (
         
         <section id='contact'>
             <div className='text-zone'>
-                <h2 className='contact-title'>Contact me</h2>
+                <h2>
+                    <AnimatedLetters
+                        letterClass={`${letterClass} about-title`}
+                        strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+                        idx={15}
+                    />
+                </h2>
                 <p className='contact-description'>
-                    I'm interested in opportunities to continue to grow. 
-                    Please don't hesitate ro contact me using below form. 
+                I am actively seeking opportunities for personal and professional growth in the vibrant Stockholm area. 
+                Please feel free to reach out to me through the contact form below or by sending an email to felicia.lordell@gmail.com. 
                 </p>
                 <div className='contact-form'>
                     <form ref={refForm} onSubmit={sendEmail}>

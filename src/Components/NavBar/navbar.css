@@ -47,4 +47,51 @@ ul {
     font-size: 1.5rem;
 }
 
+.active {
+    color: #953A23;
+    padding-bottom: 0.1rem;
+    border-bottom: 1.5px solid #953A23;
+    
+}
 
+.burger-menu{
+    font-size: 1.8rem;
+    display: none;
+
+}
+
+.burger-menu-nav {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    text-align: center;
+    min-width: 15rem;
+    background: #fff;
+    border-radius: 1rem;
+    background: #eaefe7;
+}
+
+.burger-menu-list-item {
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background: #fff;
+
+}
+
+@media screen and (max-width:700px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    .navbar>ul{
+        display: none;
+    }
+}

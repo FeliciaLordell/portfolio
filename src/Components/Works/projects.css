@@ -170,5 +170,17 @@ margin-top: 1rem;
     }
 
 }
+@media screen and (max-width:679px) {
+    .projects-imgs>span {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .projects-imgs>span {
+        height: 27rem;
+    }
+} 
+
 
 

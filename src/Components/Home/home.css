@@ -11,7 +11,7 @@
 
 .bg {
     position: absolute;
-    top: 6rem;
+    top: 3rem;
     right: 4rem;
     z-index: -1;
     object-fit: cover;
@@ -28,6 +28,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: ;
+    background: rgba(255, 255, 255, 0.4);
     
 }
 .hello {
@@ -89,6 +91,7 @@ margin-left: 20px;
     }
 
 }
+
 @media screen and (max-height:600px) {
     .bg {
         right: 10vh;

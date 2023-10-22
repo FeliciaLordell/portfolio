@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
-import bg from '../../assets/images/illustrated-img.png';
+import bg from '../../assets/images/Felicia.png';
 import { Link } from 'react-scroll';
 import AnimatedLetters from '../AnimatedLetters';
 

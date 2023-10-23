@@ -1,5 +1,5 @@
 #projects {
-    min-height: calc(50vw);
+    min-height: calc(20vw);
     width: 100vw;
     max-width: 100rem;
     display: flex;
@@ -67,10 +67,6 @@
     margin: 0 1rem;
 }
 
-/* .git-btn {
-margin-top: 1rem; 
-} */
-
 
 
 .git-btn {
@@ -114,22 +110,24 @@ margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Adjust the gap between elements as needed */
+    gap: 10px; 
 }
 
 .icons {
-    width: 8vw; /* Set a fixed width for all icons */
-    height: 8vw; /* Set a fixed height for all icons */
+    width: 8vw; 
+    max-width: 8rem;
+    height: 8vw; 
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: 0;
 }
 
 .icons-img{
-    width: vw; /* Set a fixed width for all icons */
-    height: 8vw; /* Set a fixed height for all icons */
-    /* animation: spin 6s linear infinite; */
+    width: 8vw; 
+    max-width: 8rem;
+    height: 8vw;
+    max-height: 8rem;
 }
 
 .face {
@@ -137,6 +135,7 @@ margin-top: 1rem;
     animation: spin 18s linear forwards;
     animation-play-state: paused;
 }
+
   
 @keyframes spin {
     0% {

@@ -47,8 +47,8 @@ const Navbar = () => {
             <Link activeClass='active' to='about' spy={true} smooth={true} offset={-70} duration={500} className='burger-menu-list-item' onClick={()=>setShowMenu(false)}>About</Link>
             <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-70} duration={500} className='burger-menu-list-item' onClick={()=>setShowMenu(false)}>Portfolio</Link>
             <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-70} duration={500} className='burger-menu-list-item' onClick={()=>setShowMenu(false)}>Contact</Link>
-            <Link activeClass='active' to='https://www.linkedin.com/in/felicia-lordell-559ba01a9/' spy={true} smooth={true} offset={-70} duration={500} className='burger-menu-list-item' onClick={()=>setShowMenu(false)}>LinkedIn</Link>
-            <Link activeClass='active' to='https://github.com/FeliciaLordell' spy={true} smooth={true} offset={-70} duration={500} className='burger-menu-list-item' onClick={()=>setShowMenu(false)}>GitHub</Link>
+            <a target="_blank" href='https://www.linkedin.com/in/felicia-lordell-559ba01a9/' className='burger-menu-list-item' onClick={()=>setShowMenu(false)}>LinkedIn</a>
+            <a target="_blank" href='https://github.com/FeliciaLordell' className='burger-menu-list-item' onClick={()=>setShowMenu(false)}>GitHub</a>
 
         </div>
     </nav>
